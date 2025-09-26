@@ -43,8 +43,6 @@ impl Interpreter {
         }
     }
 
-    //fn generate_
-
     pub fn convert_program_to_ir_ops(&mut self, program_path: &str) {
         let mut program_file = File::open(program_path).expect("[ERROR] Unable to open the file !");
         let mut program_buffer = String::new();
