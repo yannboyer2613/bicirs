@@ -1,0 +1,45 @@
+This is the repository of bicirs, a simple Brainf_ck interpreter written in Rust.
+
+
+
+
+This interpreter is really naive, not really optimizing and can certainly be improved.
+
+
+
+Here is what I got running the mandelbrot.bf program on bicirs(on a Ryzen 5 7640HS) :
+
+
+
+
+Performance counter stats for './bicirs programs/mandelbrot.bf':
+        5,363.53 msec task-clock:u                     #    1.000 CPUs utilized
+
+        0      context-switches:u               #    0.000 /sec
+
+        0      cpu-migrations:u                 #    0.000 /sec
+
+        127      page-faults:u                    #   23.678 /sec
+
+        64,606,616,516      instructions:u                   #    2.51  insn per cycle
+                                                  #    0.13  stalled cycles per insn     (71.43%)
+
+        25,716,064,596      cycles:u                         #    4.795 GHz                         (71.43%)
+
+        8,368,381,375      stalled-cycles-frontend:u        #   32.54% frontend cycles idle        (71.44%)
+
+        14,409,818,255      branches:u                       #    2.687 G/sec                       (71.45%)
+
+        201,266,747      branch-misses:u                  #    1.40% of all branches             (71.44%)
+
+        24,616,291,335      L1-dcache-loads:u                #    4.590 G/sec                       (71.41%)
+
+        8,523,766      L1-dcache-load-misses:u          #    0.03% of all L1-dcache accesses   (71.41%)
+
+
+        5.364338588 seconds time elapsed
+
+
+        5.308785000 seconds user
+
+        0.007694000 seconds sys
